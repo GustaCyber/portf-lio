@@ -133,6 +133,7 @@ document.querySelectorAll('.tool-btn').forEach(btn => {
 window.addEventListener('load', () => {
     typeLines([
         "root@portfolio:~$ echo 'Bem-vindo ao meu portfólio'",
-        "Bem-vindo! Este é um terminal simulado — clique nas ferramentas à esquerda para ver mais.\n"
+        "Seja bem-vindo!\n"
     ]);
 });
+
