@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfólio - Terminal Simulado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Site/style/style.css">
+</head>
+<!--
+Queria dizer que usei uma IA para fazer este site, pois não me lembro JS e queria deixar uma parte feita
+Por esse motivo, resolvi fazer com IA.
+-->
+
+
+<body>
+    <div class="app"> <!-- Container principal da aplicação -->
+        <aside class="sidebar"> <!-- Barra lateral com informações e ferramentas -->
+            <div class="brand"> <!-- Seção de marca (foto e nome) -->
+                <div class="logo"> <!-- Container da foto -->
+                    <img src="Site/assets/ChatGPT Image 3 de out. de 2025, 18_17_41.png" alt="minha_foto">
+                    <!-- Imagem do usuário -->
+                </div>
+                <div>
+                    <h1>Gustavo S Santos </h1> <!-- Nome do usuário -->
+                    <div style="font-size:12px;color:var(--muted)">InfoSec</div> <!-- Descrição do estilo -->
+                </div>
+            </div>
+            <div class="tools"> <!-- Seção de ferramentas (botões) -->
+                <button class="tool-btn" data-action="about">
+                    <span class="kbd">metasploit</span>
+                    <span style="flex:1">Sobre mim</span>
+                </button>
+                <!-- Botão "Sobre mim" -->
+                <button class="tool-btn" data-action="projects">
+                    <span class="kbd">wireshark</span>
+                    <span style="flex:1">Projetos</span>
+                </button> <!-- Botão "Projetos" -->
+                <button class="tool-btn" data-action="skills">
+                    <span class="kbd">nmap</span>
+                    <span style="flex:1">Habilidades</span>
+                </button> <!-- Botão "Habilidades" -->
+                <button class="tool-btn" data-action="resume">
+                    <span class="kbd">cat</span>
+                    <span style="flex:1">Currículo</span>
+                </button> <!-- Botão "Currículo" -->
+                <button class="tool-btn" data-action="contact">
+                    <span class="kbd">ssh</span>
+                    <span style="flex:1">Contato</span>
+                </button> <!-- Botão "Contato" -->
+            </div>
+        </aside>
+
+        <main class="panel"> <!-- Painel principal (terminal simulado) -->
+            <div class="panel-header"> <!-- Cabeçalho do painel -->
+                <div class="dots"><span class="dot red"></span><span class="dot amber"></span><span
+                        class="dot green"></span></div> <!-- Ícones de controle do terminal -->
+                <div style="font-size:13px;color:var(--muted)">Selecione a ferramenta à esquerda.
+                </div> <!-- Instrução para o usuário -->
+            </div>
+
+            <div id="terminal" class="terminal" aria-live="polite"></div>
+            <!-- Área onde o terminal simulado exibe a saída -->
+            <div class="footer">Esse site foi feito por IA, mas informações no devtools do navegador.</div>
+            <!-- Dica para o usuário -->
+        </main>
+    </div>
+    <script src="Site/js/main.js"></script> <!-- Importa o script JavaScript principal -->
+</body>
+
+</html>
